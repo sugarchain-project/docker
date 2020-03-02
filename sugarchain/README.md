@@ -2,7 +2,7 @@
 
 ### How to use this image
 
-This image contains the main binaries from the Sugarchain Yumekawa project - `sugarchaind`, sugarchain-cli` and `sugarchain-tx`. It behaves like a binary, so you can pass any arguments to the image and they will be forwarded to the`sugarchaind` binary:
+This image contains the main binaries from the Sugarchain Yumekawa project - `sugarchaind`, `sugarchain-cli` and `sugarchain-tx`. It behaves like a binary, so you can pass any arguments to the image and they will be forwarded to the`sugarchaind` binary:
 
 ```bash
 ❯ docker run --rm -it sugarchain/sugarchain \
