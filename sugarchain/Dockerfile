@@ -1,5 +1,5 @@
 # Build stage for BerkeleyDB
-FROM alpine as berkeleydb
+FROM alpine:3.11 as berkeleydb
 
 ENV BERKELEYDB_VERSION=db-4.8.30.NC
 ENV BERKELEYDB_PREFIX=/opt/${BERKELEYDB_VERSION}
@@ -18,7 +18,7 @@ RUN ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=${BERKEL
 && rm -rf ${BERKELEYDB_PREFIX}/docs
 
 # Build stage for Sugarchain Yumekawa
-FROM alpine as sugarchain-yumekawa
+FROM alpine:3.11 as sugarchain-yumekawa
 
 COPY --from=berkeleydb /opt /opt
 
@@ -55,7 +55,7 @@ strip ${SUGAR_PREFIX}/bin/sugarchain-tx
 
 
 # Build stage for compiled artifacts
-FROM alpine
+FROM alpine:3.11
 
 LABEL maintainer="Rakutens (@rakutens)"
 
