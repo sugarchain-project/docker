@@ -2,7 +2,7 @@
 
 ### How to use this image
 
-This image contains the main binaries from the Sugarchain Yumekawa project - `sugarchaind`, sugarchain-cli` and `sugarchain-tx`. It behaves like a binary, so you can pass any arguments to the image and they will be forwarded to the`sugarchaind` binary:
+This image contains the main binaries from the Sugarchain Yumekawa project - `sugarchaind`, `sugarchain-cli` and `sugarchain-tx`. It behaves like a binary, so you can pass any arguments to the image and they will be forwarded to the`sugarchaind` binary:
 
 ```bash
 ❯ docker run --rm -it sugarchain/sugarchain \
@@ -98,7 +98,7 @@ docker run --rm -it \
 To test that mapping worked, you can send a JSON-RPC curl request to the host port:
 
 ```bash
-curl --data-binary '{"jsonrpc":"1.0","id":"1","method":"getnetworkinfo","params":[]}' http://foo:qDDZdeQ5vw9XXFeVnXT4PZ--tGN2xNjjR4nrtyszZx0=@127.0.0.1:18443/
+curl --data-binary '{"jsonrpc":"1.0","id":"1","method":"getnetworkinfo","params":[]}' http://foo:qDDZdeQ5vw9XXFeVnXT4PZ--tGN2xNjjR4nrtyszZx0=@127.0.0.1:45339/
 ```
 
 #### Mainnet
