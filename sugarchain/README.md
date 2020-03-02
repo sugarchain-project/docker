@@ -113,7 +113,7 @@ curl --data-binary '{"jsonrpc":"1.0","id":"1","method":"getnetworkinfo","params"
 
 #### Regtest
 
-- JSON-RPC/REST: 45339 (_since 0.16+_, otherwise _18332_)
+- JSON-RPC/REST: 45339
 - P2P: 45340
 
 
